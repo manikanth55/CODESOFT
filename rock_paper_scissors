@@ -1,0 +1,17 @@
+import random
+user_choice=int(input('enter your choice: type 0 for rock⛰️,type 1 for paper🧻,type 2 for scissors✂️.'))
+if user_choice>= 3 and user_choice<0:
+    print("invallid number,you lose the point  ")
+computer_choice=random.randint(0,2)
+print("computer_choice:")
+print(computer_choice)
+if computer_choice==user_choice:
+  print("it is draw ")
+elif computer_choice == 0 and user_choice == 2:
+   print("computer win.")
+elif computer_choice == 2 and user_choice == 0:
+   print("you win.")
+elif computer_choice<user_choice:
+   print("you win.")
+elif computer_choice>user_choice:
+   print("computer win.")
